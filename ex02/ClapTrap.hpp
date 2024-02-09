@@ -6,7 +6,7 @@
 /*   By: acomet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 22:16:07 by acomet            #+#    #+#             */
-/*   Updated: 2024/02/04 14:10:28 by acomet           ###   ########.fr       */
+/*   Updated: 2024/01/31 22:52:21 by acomet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ protected:
 	int			_Hit_Points;
 	int			_Energy_Points;
 	int			_Attack_Damage;
-	std::string	_Class;
+	std::string			_Class;
 
 public:
 
@@ -34,9 +34,9 @@ public:
 	~ClapTrap(void);
 
 	std::string	get_Name(void) const;
-	void	attack(const std::string& target);
-	void	takeDamage(unsigned int amount);
-	void	beRepaired(unsigned int amount);
+	void		attack(const std::string& target);
+	void		takeDamage(unsigned int amount);
+	void		beRepaired(unsigned int amount);
 
 	ClapTrap	&operator=(ClapTrap const &rhs);
 

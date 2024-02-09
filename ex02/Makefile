@@ -6,11 +6,11 @@
 #    By: acomet <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/03 16:30:18 by acomet            #+#    #+#              #
-#    Updated: 2024/01/31 22:03:06 by acomet           ###   ########.fr        #
+#    Updated: 2024/01/31 22:18:03 by acomet           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		=	ScavTrap
+NAME		=	FragTrap
 
 CC			=	c++
 
@@ -21,6 +21,7 @@ BUILD		=	build
 SRCS		= 	main.cpp \
 				ClapTrap.cpp \
 				ScavTrap.cpp \
+				FragTrap.cpp \
 
 OBJS 		= 	$(SRCS:%.cpp=$(BUILD)/%.o)
 

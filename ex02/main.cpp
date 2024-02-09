@@ -6,36 +6,39 @@
 /*   By: acomet <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/29 23:16:26 by acomet            #+#    #+#             */
-/*   Updated: 2024/02/02 21:14:53 by acomet           ###   ########.fr       */
+/*   Updated: 2024/01/31 22:58:03 by acomet           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int	main(void)
 {
-	ScavTrap	a;
-	ScavTrap	b("BIGname");
-	ClapTrap	c;
-	ScavTrap	d(b);
+	FragTrap	a;
+	FragTrap	b("BoB");
+	FragTrap	bidule("bidule");
+	FragTrap	c(bidule);
+	FragTrap	tuc("tuc");
+	FragTrap	d;
 
-	b.attack("b");
-	int	i = 0;
-	std::cout << "a will attack 52 times :" << std::endl;
-	while (i < 52)
+	d = tuc;
+	a.attack("oui");
+	int i = 0;
+	while (i < 100)
 	{
-		a.attack("oui");
+		a.attack("ha!");
 		i++;
 	}
-	a.guardGate();
-	b.beRepaired(10);
-	b.takeDamage(99);
-	b.takeDamage(1);
-	b.takeDamage(99);
-	a.guardGate();
-	b.guardGate();
-	c.attack("d");
-	d = b;
-	d.beRepaired(10);
-	d.guardGate();
+	b.beRepaired(5);
+	bidule.highFivesGuys();
+	c.takeDamage(5);
+	c.beRepaired(10);
+	c.takeDamage(104);
+	c.takeDamage(1);
+	c.takeDamage(9999999);
+	tuc.attack("meshon");
+	d.highFivesGuys();
+	d.highFivesGuys();
+	d.highFivesGuys();
+	d.highFivesGuys();
 }
